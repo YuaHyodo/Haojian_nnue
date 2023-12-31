@@ -1,7 +1,7 @@
 # 概要
 - 最近作っているPytorchでNNUEの学習ができるプログラム(nnue-pytorchとは別物)のテストとして制作したHáo( https://github.com/nodchip/tanuki-/releases/tag/tanuki-.halfkp_256x2-32-32.2023-05-08 )をベースにした評価関数
 - 出来はイマイチだが、特に何かに使う予定もなくもったいないので公開する事にした
-- 3つともすべて標準NNUE( halfkp_256x2-32-32 )で、やねうら王の評価関数として利用できる
+- 3つともすべて標準NNUE( halfkp_256x2-32-32 )で、やねうら王( https://github.com/yaneurao/YaneuraOu )の評価関数として利用できる( 使い方はやねうら王の公式wiki( https://github.com/yaneurao/YaneuraOu/wiki )で調べてください )
 - 名前の由来はHáo + 某ゲームに出てくる災いの剣
 
 # Haojian_231225
