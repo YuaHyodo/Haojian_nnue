@@ -30,7 +30,7 @@
 - Qhapaq Pretty Daabiの公開されている教師データ( https://qhapaq.hatenablog.com/entry/2021/11/23/220251 | https://github.com/qhapaq-49/qhapaq-bin/releases/tag/dataset )を利用してHáoを追加学習した評価関数。学習の際のテストデータには、GCTの公開テストデータ( 参考: https://tadaoyamaoka.hatenablog.com/entry/2020/11/26/203912 )を利用している。
 - 公開した学習部( https://github.com/YuaHyodo/Ari_Shogi_NNUE_train )のサンプルなので、学習ログも公開している( 学習ログは、学習データのディレクトリなどを一部人力で編集している )
 - 自分の残したメモによると、FV_SCALEは11が1番強いらしく、その設定だとFV_SCALEを20にしたHáoに対し、1手1000ms、たややん互角局面集24手目～で、「1000戦488勝8分(レート-5.6)」という成績らしい。が、そんなに強くはなさそうな感じなので計測ミスしている気がする。 
-- i5-13400F(4スレッド)でfloodgateに放流中( http://wdoor.c.u-tokyo.ac.jp/shogi/view/show-player.cgi?event=LATEST&filter=floodgate&show_self_play=1&user=HaojianQPD_240321_4t )。
+- i5-13400F(4スレッド / Ponder無し / 定跡なし)でfloodgateに放流中( http://wdoor.c.u-tokyo.ac.jp/shogi/view/show-player.cgi?event=LATEST&filter=floodgate&show_self_play=1&user=HaojianQPD_240321_4t )。
 
 # ライセンス
 - 学習元のHáoがGPL3.0っぽいのでとりあえずGPL3.0としています
