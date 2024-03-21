@@ -1,0 +1,222 @@
+2024-03-20 15:14:40.841437 | args = Namespace(CyclicLR_maxLR=10.0, CyclicLR_step_size=2000, ReduceLROnPlateau_factor=0.1, ReduceLROnPlateau_patience=2, ReduceLROnPlateau_threshold=0.0001, adam_eps=1e-08, backup_dire='./backup/', backup_interval=5000, batchsize=8192, checkpoint='./checkpoints/', epoch=50, eval_a=380, eval_a_test=217, eval_interval=5000, gpu=0, log='NNUE_train_test.txt', lr_L1=0.0008, lr_L2=0.0008, lr_input=0.0008, lr_output=8e-05, lr_scheduler_type='none', make_new_layer_L1=False, make_new_layer_L2=False, make_new_layer_input=False, make_new_layer_output=False, optimizer='sgd', resume='./Hao/eval/nn.bin', save_model_interval=10, sgd_momentum=0.9, sgd_nesterov=True, test_batchsize=2048, test_before_train=True, test_data='./data/GCT_test_data/', train_data=['./data/QPD_data/'], unique=True, use_amp=True, val_lambda=0.33, weight_decay=0.0001)
+2024-03-20 15:14:40.859439 | Loading the checkpoint from ./Hao/eval/nn.bin
+2024-03-20 15:14:40.859439 | Load from .bin
+2024-03-20 15:14:43.499496 | input_layer is set to be trained. LR is 0.0008
+2024-03-20 15:14:43.500513 | L1_layer is set to be trained. LR is 0.0008
+2024-03-20 15:14:43.500513 | L2_layer is set to be trained. LR is 0.0008
+2024-03-20 15:14:43.500513 | output_layer is set to be trained. LR is 8e-05
+2024-03-20 15:14:43.501498 | optimizer_type = sgd
+2024-03-20 15:14:43.501498 | LR_scheduler = None
+2024-03-20 15:14:43.501498 | train_data_files: [['./data/QPD_data/QPD_train_data.hcpe']]
+2024-03-20 15:14:43.501498 | test_data_files: ['./data/GCT_test_data/floodgate_teacher_uniq-test-01.hcpe']
+2024-03-20 15:15:02.683657 | len(test_dataloader) = 2414974
+2024-03-20 15:15:02.684659 | test_before_train == True
+2024-03-20 15:15:04.676938 | test_before_train | test_loss = 0.5949457287788391, test_acc = 0.68701171875
+2024-03-20 15:15:04.676938 | start epoch 0
+2024-03-20 15:18:26.996253 | save checkpoint
+2024-03-20 15:18:29.151551 | start eval model
+2024-03-20 15:18:29.865638 | epoch = 0, steps = 98, train_loss_avr = 0.6516545457499368, test_loss = 0.5913353562355042, test_acc = 0.671875
+2024-03-20 15:18:29.866638 | finish_epoch 0
+2024-03-20 15:18:29.866638 | start epoch 1
+2024-03-20 15:21:37.537162 | start eval model
+2024-03-20 15:21:38.019244 | epoch = 1, steps = 98, train_loss_avr = 0.6315932444163731, test_loss = 0.5902616381645203, test_acc = 0.673828125
+2024-03-20 15:21:38.020231 | finish_epoch 1
+2024-03-20 15:21:38.021229 | start epoch 2
+2024-03-20 15:24:42.352734 | start eval model
+2024-03-20 15:24:42.704204 | epoch = 2, steps = 98, train_loss_avr = 0.6251023156302316, test_loss = 0.5891916155815125, test_acc = 0.6728515625
+2024-03-20 15:24:42.705238 | finish_epoch 2
+2024-03-20 15:24:42.705238 | start epoch 3
+2024-03-20 15:27:47.413983 | start eval model
+2024-03-20 15:27:47.763318 | epoch = 3, steps = 98, train_loss_avr = 0.6213212293021533, test_loss = 0.5885482430458069, test_acc = 0.6708984375
+2024-03-20 15:27:47.764305 | finish_epoch 3
+2024-03-20 15:27:47.765143 | start epoch 4
+2024-03-20 15:30:51.582688 | start eval model
+2024-03-20 15:30:51.930518 | epoch = 4, steps = 98, train_loss_avr = 0.6188093813098207, test_loss = 0.5882415771484375, test_acc = 0.67236328125
+2024-03-20 15:30:51.933520 | finish_epoch 4
+2024-03-20 15:30:51.934531 | start epoch 5
+2024-03-20 15:33:56.702517 | start eval model
+2024-03-20 15:33:57.049524 | epoch = 5, steps = 98, train_loss_avr = 0.6168922514331584, test_loss = 0.5881277322769165, test_acc = 0.671875
+2024-03-20 15:33:57.050525 | finish_epoch 5
+2024-03-20 15:33:57.051525 | start epoch 6
+2024-03-20 15:37:00.763969 | start eval model
+2024-03-20 15:37:01.112596 | epoch = 6, steps = 98, train_loss_avr = 0.6153360769456747, test_loss = 0.5880254507064819, test_acc = 0.66943359375
+2024-03-20 15:37:01.116582 | finish_epoch 6
+2024-03-20 15:37:01.116582 | start epoch 7
+2024-03-20 15:40:05.955227 | start eval model
+2024-03-20 15:40:06.317006 | epoch = 7, steps = 98, train_loss_avr = 0.6140861748432627, test_loss = 0.5880539417266846, test_acc = 0.66845703125
+2024-03-20 15:40:06.318008 | finish_epoch 7
+2024-03-20 15:40:06.319007 | start epoch 8
+2024-03-20 15:43:10.045499 | start eval model
+2024-03-20 15:43:10.398155 | epoch = 8, steps = 98, train_loss_avr = 0.6130715900537919, test_loss = 0.5880739688873291, test_acc = 0.6669921875
+2024-03-20 15:43:10.399156 | finish_epoch 8
+2024-03-20 15:43:10.399156 | start epoch 9
+2024-03-20 15:46:15.256567 | start eval model
+2024-03-20 15:46:15.603782 | epoch = 9, steps = 98, train_loss_avr = 0.6121694597662711, test_loss = 0.5881214141845703, test_acc = 0.666015625
+2024-03-20 15:46:15.604784 | finish_epoch 9
+2024-03-20 15:46:15.604784 | start epoch 10
+2024-03-20 15:49:19.324148 | save checkpoint
+2024-03-20 15:49:21.391759 | start eval model
+2024-03-20 15:49:21.787269 | epoch = 10, steps = 98, train_loss_avr = 0.6113680643694741, test_loss = 0.5880975723266602, test_acc = 0.66650390625
+2024-03-20 15:49:21.789269 | finish_epoch 10
+2024-03-20 15:49:21.789269 | start epoch 11
+2024-03-20 15:52:26.612864 | start eval model
+2024-03-20 15:52:26.961462 | epoch = 11, steps = 98, train_loss_avr = 0.6105739772319794, test_loss = 0.5881202220916748, test_acc = 0.66650390625
+2024-03-20 15:52:26.962465 | finish_epoch 11
+2024-03-20 15:52:26.963465 | start epoch 12
+2024-03-20 15:55:30.665043 | start eval model
+2024-03-20 15:55:31.020696 | epoch = 12, steps = 98, train_loss_avr = 0.6098802266072254, test_loss = 0.5881026983261108, test_acc = 0.66357421875
+2024-03-20 15:55:31.021698 | finish_epoch 12
+2024-03-20 15:55:31.021698 | start epoch 13
+2024-03-20 15:58:35.738826 | start eval model
+2024-03-20 15:58:36.089777 | epoch = 13, steps = 98, train_loss_avr = 0.6092507954762907, test_loss = 0.5880637168884277, test_acc = 0.66162109375
+2024-03-20 15:58:36.090775 | finish_epoch 13
+2024-03-20 15:58:36.091821 | start epoch 14
+2024-03-20 16:01:39.788700 | start eval model
+2024-03-20 16:01:40.136443 | epoch = 14, steps = 98, train_loss_avr = 0.6086139052498097, test_loss = 0.5880393981933594, test_acc = 0.66259765625
+2024-03-20 16:01:40.137446 | finish_epoch 14
+2024-03-20 16:01:40.138445 | start epoch 15
+2024-03-20 16:04:44.906064 | start eval model
+2024-03-20 16:04:45.256981 | epoch = 15, steps = 98, train_loss_avr = 0.6081298857319112, test_loss = 0.5880535244941711, test_acc = 0.662109375
+2024-03-20 16:04:45.257982 | finish_epoch 15
+2024-03-20 16:04:45.257982 | start epoch 16
+2024-03-20 16:07:48.731121 | start eval model
+2024-03-20 16:07:49.081454 | epoch = 16, steps = 98, train_loss_avr = 0.6075730956330592, test_loss = 0.5880394577980042, test_acc = 0.66455078125
+2024-03-20 16:07:49.082456 | finish_epoch 16
+2024-03-20 16:07:49.083455 | start epoch 17
+2024-03-20 16:10:53.774668 | start eval model
+2024-03-20 16:10:54.120502 | epoch = 17, steps = 98, train_loss_avr = 0.607042309581017, test_loss = 0.5880308151245117, test_acc = 0.6650390625
+2024-03-20 16:10:54.121438 | finish_epoch 17
+2024-03-20 16:10:54.122438 | start epoch 18
+2024-03-20 16:13:57.669834 | start eval model
+2024-03-20 16:13:58.019803 | epoch = 18, steps = 98, train_loss_avr = 0.6065652948253009, test_loss = 0.5880084037780762, test_acc = 0.6650390625
+2024-03-20 16:13:58.020265 | finish_epoch 18
+2024-03-20 16:13:58.020265 | start epoch 19
+2024-03-20 16:17:02.747450 | start eval model
+2024-03-20 16:17:03.094136 | epoch = 19, steps = 98, train_loss_avr = 0.6060388970131777, test_loss = 0.5880154967308044, test_acc = 0.66552734375
+2024-03-20 16:17:03.096123 | finish_epoch 19
+2024-03-20 16:17:03.096123 | start epoch 20
+2024-03-20 16:20:06.945734 | save checkpoint
+2024-03-20 16:20:08.933918 | start eval model
+2024-03-20 16:20:09.331992 | epoch = 20, steps = 98, train_loss_avr = 0.6056604227241205, test_loss = 0.587999701499939, test_acc = 0.66552734375
+2024-03-20 16:20:09.331992 | finish_epoch 20
+2024-03-20 16:20:09.332994 | start epoch 21
+2024-03-20 16:23:14.124905 | start eval model
+2024-03-20 16:23:14.478949 | epoch = 21, steps = 98, train_loss_avr = 0.6053104668247457, test_loss = 0.5880240797996521, test_acc = 0.666015625
+2024-03-20 16:23:14.479932 | finish_epoch 21
+2024-03-20 16:23:14.479932 | start epoch 22
+2024-03-20 16:26:18.132150 | start eval model
+2024-03-20 16:26:18.486619 | epoch = 22, steps = 98, train_loss_avr = 0.6048473557647394, test_loss = 0.5880420207977295, test_acc = 0.66357421875
+2024-03-20 16:26:18.487621 | finish_epoch 22
+2024-03-20 16:26:18.488619 | start epoch 23
+2024-03-20 16:29:23.223295 | start eval model
+2024-03-20 16:29:23.570261 | epoch = 23, steps = 98, train_loss_avr = 0.6044884275416939, test_loss = 0.588055431842804, test_acc = 0.662109375
+2024-03-20 16:29:23.571364 | finish_epoch 23
+2024-03-20 16:29:23.572238 | start epoch 24
+2024-03-20 16:32:27.427543 | start eval model
+2024-03-20 16:32:27.780281 | epoch = 24, steps = 98, train_loss_avr = 0.6041290097090662, test_loss = 0.5880759954452515, test_acc = 0.6611328125
+2024-03-20 16:32:27.781276 | finish_epoch 24
+2024-03-20 16:32:27.781276 | start epoch 25
+2024-03-20 16:35:32.626887 | start eval model
+2024-03-20 16:35:32.978266 | epoch = 25, steps = 98, train_loss_avr = 0.6036680085318429, test_loss = 0.588097333908081, test_acc = 0.662109375
+2024-03-20 16:35:32.979268 | finish_epoch 25
+2024-03-20 16:35:32.979268 | start epoch 26
+2024-03-20 16:38:36.606098 | start eval model
+2024-03-20 16:38:36.957603 | epoch = 26, steps = 98, train_loss_avr = 0.6033619484122918, test_loss = 0.5881025195121765, test_acc = 0.6611328125
+2024-03-20 16:38:36.958562 | finish_epoch 26
+2024-03-20 16:38:36.958562 | start epoch 27
+2024-03-20 16:41:41.746202 | start eval model
+2024-03-20 16:41:42.094497 | epoch = 27, steps = 98, train_loss_avr = 0.6029783535976799, test_loss = 0.5881128907203674, test_acc = 0.66162109375
+2024-03-20 16:41:42.095497 | finish_epoch 27
+2024-03-20 16:41:42.096753 | start epoch 28
+2024-03-20 16:44:45.728351 | start eval model
+2024-03-20 16:44:46.075293 | epoch = 28, steps = 98, train_loss_avr = 0.6027382782527378, test_loss = 0.5881015062332153, test_acc = 0.66162109375
+2024-03-20 16:44:46.075293 | finish_epoch 28
+2024-03-20 16:44:46.076301 | start epoch 29
+2024-03-20 16:47:50.907197 | start eval model
+2024-03-20 16:47:51.257867 | epoch = 29, steps = 98, train_loss_avr = 0.6023056184758946, test_loss = 0.5881224870681763, test_acc = 0.66162109375
+2024-03-20 16:47:51.257867 | finish_epoch 29
+2024-03-20 16:47:51.258869 | start epoch 30
+2024-03-20 16:50:54.761490 | save checkpoint
+2024-03-20 16:50:56.957367 | start eval model
+2024-03-20 16:50:57.484688 | epoch = 30, steps = 98, train_loss_avr = 0.6020778654789438, test_loss = 0.5881103277206421, test_acc = 0.6611328125
+2024-03-20 16:50:57.485687 | finish_epoch 30
+2024-03-20 16:50:57.485687 | start epoch 31
+2024-03-20 16:54:02.153759 | start eval model
+2024-03-20 16:54:02.507990 | epoch = 31, steps = 98, train_loss_avr = 0.6017162447073021, test_loss = 0.5881236791610718, test_acc = 0.66015625
+2024-03-20 16:54:02.507990 | finish_epoch 31
+2024-03-20 16:54:02.508990 | start epoch 32
+2024-03-20 16:57:06.061142 | start eval model
+2024-03-20 16:57:06.416295 | epoch = 32, steps = 98, train_loss_avr = 0.6013711113102582, test_loss = 0.5881454944610596, test_acc = 0.66015625
+2024-03-20 16:57:06.417287 | finish_epoch 32
+2024-03-20 16:57:06.418273 | start epoch 33
+2024-03-20 17:00:11.303466 | start eval model
+2024-03-20 17:00:11.650593 | epoch = 33, steps = 98, train_loss_avr = 0.6010673909771199, test_loss = 0.5881355404853821, test_acc = 0.66015625
+2024-03-20 17:00:11.651607 | finish_epoch 33
+2024-03-20 17:00:11.652548 | start epoch 34
+2024-03-20 17:03:15.427773 | start eval model
+2024-03-20 17:03:15.778277 | epoch = 34, steps = 98, train_loss_avr = 0.6007620169191944, test_loss = 0.5881487131118774, test_acc = 0.66064453125
+2024-03-20 17:03:15.779284 | finish_epoch 34
+2024-03-20 17:03:15.780547 | start epoch 35
+2024-03-20 17:06:20.375849 | start eval model
+2024-03-20 17:06:20.725420 | epoch = 35, steps = 98, train_loss_avr = 0.6004853449305709, test_loss = 0.5881580710411072, test_acc = 0.66162109375
+2024-03-20 17:06:20.726429 | finish_epoch 35
+2024-03-20 17:06:20.727795 | start epoch 36
+2024-03-20 17:09:24.457884 | start eval model
+2024-03-20 17:09:24.808373 | epoch = 36, steps = 98, train_loss_avr = 0.6002024229691953, test_loss = 0.5881633758544922, test_acc = 0.66064453125
+2024-03-20 17:09:24.808373 | finish_epoch 36
+2024-03-20 17:09:24.809374 | start epoch 37
+2024-03-20 17:12:29.401484 | start eval model
+2024-03-20 17:12:29.750799 | epoch = 37, steps = 98, train_loss_avr = 0.5999199024268559, test_loss = 0.5881657600402832, test_acc = 0.66064453125
+2024-03-20 17:12:29.750799 | finish_epoch 37
+2024-03-20 17:12:29.752132 | start epoch 38
+2024-03-20 17:15:33.422543 | start eval model
+2024-03-20 17:15:33.772705 | epoch = 38, steps = 98, train_loss_avr = 0.5996152643038302, test_loss = 0.5881557464599609, test_acc = 0.65966796875
+2024-03-20 17:15:33.773699 | finish_epoch 38
+2024-03-20 17:15:33.773699 | start epoch 39
+2024-03-20 17:18:38.437956 | start eval model
+2024-03-20 17:18:38.785581 | epoch = 39, steps = 98, train_loss_avr = 0.5994132848418489, test_loss = 0.5881609916687012, test_acc = 0.6591796875
+2024-03-20 17:18:38.786582 | finish_epoch 39
+2024-03-20 17:18:38.786582 | start epoch 40
+2024-03-20 17:21:42.823861 | save checkpoint
+2024-03-20 17:21:44.883585 | start eval model
+2024-03-20 17:21:45.435019 | epoch = 40, steps = 98, train_loss_avr = 0.5990970998394246, test_loss = 0.5881521701812744, test_acc = 0.66015625
+2024-03-20 17:21:45.436021 | finish_epoch 40
+2024-03-20 17:21:45.437021 | start epoch 41
+2024-03-20 17:24:50.095990 | start eval model
+2024-03-20 17:24:50.451713 | epoch = 41, steps = 98, train_loss_avr = 0.5988451394499564, test_loss = 0.5881633758544922, test_acc = 0.6611328125
+2024-03-20 17:24:50.454712 | finish_epoch 41
+2024-03-20 17:24:50.454712 | start epoch 42
+2024-03-20 17:27:54.352636 | start eval model
+2024-03-20 17:27:54.700527 | epoch = 42, steps = 98, train_loss_avr = 0.5985805136816842, test_loss = 0.588151216506958, test_acc = 0.66162109375
+2024-03-20 17:27:54.701512 | finish_epoch 42
+2024-03-20 17:27:54.702554 | start epoch 43
+2024-03-20 17:30:59.529352 | start eval model
+2024-03-20 17:30:59.884127 | epoch = 43, steps = 98, train_loss_avr = 0.5983610986446848, test_loss = 0.5881447792053223, test_acc = 0.662109375
+2024-03-20 17:30:59.884127 | finish_epoch 43
+2024-03-20 17:30:59.885138 | start epoch 44
+2024-03-20 17:34:03.725209 | start eval model
+2024-03-20 17:34:04.085859 | epoch = 44, steps = 98, train_loss_avr = 0.5980399494268456, test_loss = 0.5881365537643433, test_acc = 0.66259765625
+2024-03-20 17:34:04.086859 | finish_epoch 44
+2024-03-20 17:34:04.087846 | start epoch 45
+2024-03-20 17:37:08.669622 | start eval model
+2024-03-20 17:37:09.016294 | epoch = 45, steps = 98, train_loss_avr = 0.5978289520253941, test_loss = 0.5881337523460388, test_acc = 0.66162109375
+2024-03-20 17:37:09.017295 | finish_epoch 45
+2024-03-20 17:37:09.018295 | start epoch 46
+2024-03-20 17:40:12.745283 | start eval model
+2024-03-20 17:40:13.093606 | epoch = 46, steps = 98, train_loss_avr = 0.5975366107055119, test_loss = 0.5881486535072327, test_acc = 0.66162109375
+2024-03-20 17:40:13.094600 | finish_epoch 46
+2024-03-20 17:40:13.095564 | start epoch 47
+2024-03-20 17:43:17.755092 | start eval model
+2024-03-20 17:43:18.105831 | epoch = 47, steps = 98, train_loss_avr = 0.5973265274446837, test_loss = 0.5881360769271851, test_acc = 0.66064453125
+2024-03-20 17:43:18.106831 | finish_epoch 47
+2024-03-20 17:43:18.107840 | start epoch 48
+2024-03-20 17:46:21.815010 | start eval model
+2024-03-20 17:46:22.164657 | epoch = 48, steps = 98, train_loss_avr = 0.5970894530111429, test_loss = 0.5881536602973938, test_acc = 0.66064453125
+2024-03-20 17:46:22.168569 | finish_epoch 48
+2024-03-20 17:46:22.169584 | start epoch 49
+2024-03-20 17:49:26.829489 | start eval model
+2024-03-20 17:49:27.180272 | epoch = 49, steps = 98, train_loss_avr = 0.5968363753386906, test_loss = 0.5881645679473877, test_acc = 0.66064453125
+2024-03-20 17:49:27.184273 | finish_epoch 49
+2024-03-20 17:49:27.185258 | save model
+2024-03-20 17:49:29.324045 | start eval model after quantization
+2024-03-20 17:49:31.594871 | test after quantization | test_loss = 0.5760143399238586, test_acc = 0.6767578125
