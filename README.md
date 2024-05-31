@@ -34,7 +34,7 @@
 # HB_Haojian_240517
 ## 概要
 - Qhapaq Pretty Daabiの公開されている教師データ( https://qhapaq.hatenablog.com/entry/2021/11/23/220251 | https://github.com/qhapaq-49/qhapaq-bin/releases/tag/dataset )とfloodgateの2018～2023年の棋譜から「高レート帯で振り飛車が勝った棋譜」のみを抽出して作ったデータで、Háoを追加学習した評価関数。学習の際のテストデータには、GCTの公開テストデータ( 参考: https://tadaoyamaoka.hatenablog.com/entry/2020/11/26/203912 )を利用している。
-- 学習ログも公開している( HB_Haojian_240517_train_log.txt / 学習データのディレクトリ名の余分な部分などは人力で削っている )
+- 学習ログも公開している( HB_Haojian_240517_train_log.txt / 学習データのディレクトリ名の余分な部分などは人力で削っている )。ちなみにこの評価関数はepoch=4の終了時の出力。
 - floodgateに放流していた、HB_Haojian_test2( http://wdoor.c.u-tokyo.ac.jp/shogi/view/show-player.cgi?event=LATEST&filter=floodgate&show_self_play=1&user=HB_Haojian_test2%2B626ae87f72bb4da5f09f1bdb82c8c7c9 )、HB_Haojian_test2_with_HNW33book( http://wdoor.c.u-tokyo.ac.jp/shogi/view/show-player.cgi?event=LATEST&filter=floodgate&show_self_play=1&user=HB_Haojian_test2_with_HNW33book%2B45d07b00b0188a892509950ff919e14e )、HB_Haojian_240517_i5-13400F_8t( http://wdoor.c.u-tokyo.ac.jp/shogi/view/show-player.cgi?event=LATEST&filter=floodgate&show_self_play=1&user=HB_Haojian_240517_i5-13400F_8t%2Bfecf4d772f647e978c7daa4b3b446ada )、HB_Haojian_240517_i5-13400F8t_2( http://wdoor.c.u-tokyo.ac.jp/shogi/view/show-player.cgi?event=LATEST&filter=floodgate&show_self_play=1&user=HB_Haojian_240517_i5-13400F8t_2%2B8cee471e62c858d9ecf4b37aca73c677 )の中身。CPUは全部同じi5-13400F, 前の2つは4スレッド+Ponderなしで後ろの2つは8スレッド+Ponderあり。with_HNW33bookは、HoneyWaffleの公開されている定跡( https://github.com/32hiko/HoneyWaffleBook/releases/tag/wcsc33 )を搭載していて、それ以外は定跡を載せていない。
 - 名前のHBはHuriBisyaの略
 - FV_SCALEの最適値は不明なので、基本的には16で対局させている。floodgateのHB_Haojian_240517_i5-13400F_8tは連続対局で求めた別の値(12)を使っていたが、弱かったので16に戻した。
